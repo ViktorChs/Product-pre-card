@@ -1,24 +1,49 @@
+:root{
+    /*Colors*/
+--clr-primary-400: hsl(158, 36%, 37%);
+--clr-secondary-200: hsl(30, 38%, 92%);
+
+--clr-neutral-900: hsl(212, 21%, 14%);
+--clr-neutral-400: hsl(228, 12%, 48%);
+--clr-neutral-100: hsl(0, 0%, 100%);
+
+/*Font family*/
+--ff-accent: 'Fraunces', serif;
+--ff-base: 'Montserrat', sans-serif;
+
+--fw-regular: 500;
+--fw-bold:    700;
+}
 *{
     margin: 0;
     padding: 0;
     box-shadow: none;
 }
+html,
+body{
+    margin: 0;
+    height: 100vh;
+}
+
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--clr-secondary-200);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    Font-size:14px;
+    font-size: 0.875em;
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-400);
 }
+/* product style */
 .Main_card-container {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--clr-neutral-100);
     width: 90vw;
     height: 92vh;
-    border-radius: 13px;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 /**/
 .Main_img-container img {
@@ -39,25 +64,27 @@ body {
     margin: auto;
     justify-content: space-evenly;
     width: 86%;
-    gap: 11px;
+    gap: 1rem;
 }
-        .Main_text-container h3 {
-            font-family: 'Fraunces', serif;
-            font-size: 1.6rem;
-            line-height: 1;
-}
-        .Main_text-container p{
-            color: hsl(228, 12%, 48%);
+.Main_text-container p{
+            color: var(--clr-neutral-400);
             font: 11px montserrat;
 }
+        .Main_text-container h3 {
+            color: var(--clr-neutral-900);
+            font-family: var(--ff-accent);
+            font-size: 2rem;
+            line-height: 1;
+}
+        
         .Main_text-container p :nth-child(1) {
-            font-family: 'Montserrat';
-            color: hsl(228, 12%, 48%);
+            font-family: var(--ff-base);
+            color: var(--clr-neutral-400);
             font-size: 0.6rem;
             letter-spacing: 5px;
 }
         .Main_text-container p :nth-child(3) {
-            font-family: 'Montserrat';
+            font-family: var(--ff-base);
             color: hsl(4, 61%, 43%);
             font-size: 0.7rem;
             letter-spacing: 5px;
@@ -69,18 +96,19 @@ body {
     display: flex;
     align-items: center;
 }
-        .Main_price-container p:nth-child(1) {
-            color: hsl(158, 36%, 37%);
+        .Main_price-container s:nth-child(1) {
+            color: var(--clr-primary-400);
+
             font: 1.7rem 'Fraunces',serif;
  
 }
-        .Main_price-container p:nth-child(2) {
+        .Main_price-container s:nth-child(2) {
             text-decoration: line-through;
             font: 11px montserrat;
 }
 /**/
 .Bts_add-to-cart {
-    background: hsl(158, 36%, 37%);
+    background: var(--clr-primary-400);
     color: white;
     border: transparent;
     height: 2.5rem;
@@ -111,6 +139,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 2vw;
+    padding: 1.5rem;
+
 }
     .Main_text-container h3 {
         font-size: 2rem;
@@ -133,7 +163,7 @@ body {
     .Main_img-container img:nth-child(1){
         display: none;
  }
- 
+  
 
     .Main_img-container img:nth-child(2) {
         display: flex;
