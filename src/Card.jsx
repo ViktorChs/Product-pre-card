@@ -2,8 +2,8 @@ export function Card() {
     return(
 <div className="Main_card-container">
 <div className="Main_img-container">
-<img src="./src/images/image-product-mobile.jpg" alt="" />
-<img src="./src/images/image-product-desktop.jpg" alt="" />
+<img src="./src/images/image-product-mobile.jpg" alt="essence" />
+<img src="./src/images/image-product-desktop.jpg" alt="essence" />
 
 </div>
 <div className="Main_text-container">
@@ -16,7 +16,7 @@ export function Card() {
   <p>$169.99</p>
   </div>
   
-  <button className="Bts_add-to-cart"><img src="./src/images/icon-cart.svg" alt=""/><strong>Add to Cart</strong></button>
+  <button className="Bts_add-to-cart"><img src="./src/images/icon-cart.svg" alt="cartIcont"/><strong>Add to Cart</strong></button>
 </div>
 
 
